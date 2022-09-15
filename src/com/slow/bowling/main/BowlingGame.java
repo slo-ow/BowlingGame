@@ -1,10 +1,10 @@
 package com.slow.bowling.main;
 
 public class BowlingGame {
-    private int pins;
+    int pins;
 
-    public BowlingGame(int pins) {
-        this.pins = pins;
+    public BowlingGame() {
+        this.pins = 20;
     }
 
     public int getPins() {
