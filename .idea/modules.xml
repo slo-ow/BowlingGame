@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../3981562/3981562.iml" filepath="$PROJECT_DIR$/../3981562/3981562.iml" />
       <module fileurl="file://$PROJECT_DIR$/BowlingGame.iml" filepath="$PROJECT_DIR$/BowlingGame.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../JavaExam/Day_0908/Day_0812.iml" filepath="$PROJECT_DIR$/../../JavaExam/Day_0908/Day_0812.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../JavaExam/Day_0908/Day_0826.iml" filepath="$PROJECT_DIR$/../../JavaExam/Day_0908/Day_0826.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../JavaExam/Day_0908/Day_0902_M.iml" filepath="$PROJECT_DIR$/../../JavaExam/Day_0908/Day_0902_M.iml" />
     </modules>
   </component>
 </project>
