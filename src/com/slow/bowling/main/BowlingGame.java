@@ -45,15 +45,18 @@ public class BowlingGame {
 
     private int sumOfRolls(int frame) {return rolls[frame] + rolls[frame+1];}
     public void printScore(){
-        System.out.println("---------------------------------------------------------");
-        System.out.println("|\t\t\t\t\t\t게임 점수 출력\t\t\t\t\t\t|");
-        System.out.println("---------------------------------------------------------");
+        if(score()!=0) { // 총점이 0이면 1 프레임도 진행하지 않은것으로 하고 게임을 진행하지 않는다
+            System.out.println();
+            System.out.println("---------------------------------------------------------");
+            System.out.println("|\t\t\t\t\t\t게임 점수 출력\t\t\t\t\t\t|");
+            System.out.println("---------------------------------------------------------");
 //        System.out.println("| 1회 | 2회 | 3회 | 4회 | 5회 | 6회 | 7회 | 8회 | 9회 | 10회 |");
-        for(int i=0; i<currentRoll; i++) System.out.printf(rolls[i]+"|");
-        System.out.println();
-        System.out.println("---------------------------------------------------------");
-        System.out.println("| 총점 : " + score() + "\t\t\t\t\t\t\t\t\t\t\t\t|");
-        System.out.println();
+            for (int i = 0; i < currentRoll; i++) System.out.printf(rolls[i] + "|");
+            System.out.println();
+            System.out.println("---------------------------------------------------------");
+            System.out.println("| 총점 : " + score() + "\t\t\t\t\t\t\t\t\t\t\t\t|");
+            System.out.println();
+        }
     }
 
     public void startGame() {
@@ -83,6 +86,7 @@ public class BowlingGame {
         } catch (InputMismatchException e) {
             //e.printStackTrace();
             System.out.println("입력 오류 : " + e.getMessage());
+            rolls = null;
         } catch (Exception e) {
             e.printStackTrace();
             System.out.println("점수 이외의 값은 입력하실 수 없습니다.");
