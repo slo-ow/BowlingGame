@@ -10,6 +10,7 @@ public class BowlingRulePrint {
     List<Rule> list = new ArrayList<>();
     public static ObjectInputStream oin;
     public static ObjectOutputStream oos;
+    StringBuilder stringBuilder = new StringBuilder();;
     void printRule() throws Exception{
         FILENAME = "rule.dat";
         oin = new ObjectInputStream(
@@ -28,7 +29,7 @@ public class BowlingRulePrint {
             oin.close();
     }
 
-    void downloadRule() throws Exception{
+    void downloadRule() {
         String FOLDER = "/download";
         System.out.println(FILEPATH);
         File f = new File(FILEPATH+FOLDER);
@@ -51,23 +52,16 @@ public class BowlingRulePrint {
             try {
                 if (f2.createNewFile()) {
                     System.out.println("파일 생성 성공");
-                    StringBuilder stringBuilder = new StringBuilder();
-                    BufferedReader br = new BufferedReader(new FileReader(FILEPATH+FILENAME));
-                    String s;
-                    while((s = br.readLine()) != null){
-                        stringBuilder.append(s).append("\n");
-                    }
-//                    System.out.println(stringBuilder);
-                    BufferedWriter bw = new BufferedWriter(new FileWriter(f2));
-                    bw.write(String.valueOf(stringBuilder));
-                    br.close();
-                    bw.close();
+                    String path = FILEPATH+FILENAME;
+                    rw_Rule(path, f2);
                 }
                 else {
                     System.out.println("파일 생성 실패");
                 }
             } catch (IOException e) {
                 e.printStackTrace();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
         } else {	// 파일이 존재한다면
             System.out.println("파일이 이미 존재합니다.");
@@ -75,7 +69,14 @@ public class BowlingRulePrint {
         System.out.println();
     }
 
-    private void rw_Rule(){
-
+    private void rw_Rule(String path, File f2) throws Exception{
+        BufferedReader br = new BufferedReader(new FileReader(path));
+        String s;
+        while((s = br.readLine()) != null) stringBuilder.append(s).append("\n");
+//                    System.out.println(stringBuilder);
+        BufferedWriter bw = new BufferedWriter(new FileWriter(f2));
+        bw.write(String.valueOf(stringBuilder));
+        br.close();
+        bw.close();
     }
 }
