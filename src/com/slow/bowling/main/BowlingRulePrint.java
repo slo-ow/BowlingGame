@@ -28,9 +28,9 @@ public class BowlingRulePrint {
             oin.close();
     }
 
-    void downloadRule() {
+    void downloadRule() throws Exception{
         String FOLDER = "/download";
-//        System.out.println(FILEPATH);
+        System.out.println(FILEPATH);
         File f = new File(FILEPATH+FOLDER);
 //         폴더 생성 : mkdir()
         if(!f.exists()){ // 폴더가 존재하는지 체크, 없다면 생성
@@ -46,16 +46,22 @@ public class BowlingRulePrint {
         FILENAME = "rule.txt";
         // 파일 생성 : createNewFile()
         File f2 = new File(f, FILENAME);	// File(디렉터리 객체, 파일명)
-//        System.out.println(f2.getAbsolutePath());
-
+        System.out.println(f2.getAbsolutePath());
         if (!f2.exists()) {	// 파일이 존재하지 않으면 생성
             try {
                 if (f2.createNewFile()) {
                     System.out.println("파일 생성 성공");
-                   FileWriter fw = new FileWriter(f2 ,false);//false 덮어쓰기
-                   String test = "test12314"; // rule.txt 내용 읽어서 copy 해야함
-                   fw.write(test);
-                   fw.close();
+                    StringBuilder stringBuilder = new StringBuilder();
+                    BufferedReader br = new BufferedReader(new FileReader(FILEPATH+FILENAME));
+                    String s;
+                    while((s = br.readLine()) != null){
+                        stringBuilder.append(s).append("\n");
+                    }
+//                    System.out.println(stringBuilder);
+                    BufferedWriter bw = new BufferedWriter(new FileWriter(f2));
+                    bw.write(String.valueOf(stringBuilder));
+                    br.close();
+                    bw.close();
                 }
                 else {
                     System.out.println("파일 생성 실패");
@@ -67,5 +73,9 @@ public class BowlingRulePrint {
             System.out.println("파일이 이미 존재합니다.");
         }
         System.out.println();
+    }
+
+    private void rw_Rule(){
+
     }
 }
