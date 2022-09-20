@@ -23,7 +23,6 @@ public class BowlingGameMain {
                 System.out.println("[5] 게임 종료");
                 System.out.print("    메뉴 선택 >> ");
                 int sw = scn.nextInt();
-                if(sw <= 5) {
                     switch (sw) {
                         case 1:
                             main.setUp();
@@ -48,12 +47,10 @@ public class BowlingGameMain {
                             System.exit(0);
                         default:
                             System.out.println("입력 오류 : 메뉴를 다시 입력하세요");
+                            break;
                     }
-                } else {
-                    throw new InputMismatchException();
-                }
             } catch (InputMismatchException e) {
-                System.out.println("입력 오류 : 메뉴 이외의 값은 입력하실 수 없습니다.");
+                System.out.println("입력 오류 : 숫자 이외의 값은 입력하실 수 없습니다.");
                 System.out.println("프로그램을 다시 실행 하세요.");
                 break;
             } catch (NullPointerException e){
