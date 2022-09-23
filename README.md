@@ -31,19 +31,19 @@
     단지 쓰러트린 핀 수 만큼 점수를 얻을 수 있다.
 
 ### Folder structural diagram
-<img src="/Volumes/data/jsl-projects/BowlingGame/img/diagram.png" width="500" height="450">
+![diagram](https://user-images.githubusercontent.com/61968619/192010101-69037fac-ecc0-4ecb-945f-8288af6e63b0.png)
 
 ### Class Diagram
-<img src="/Volumes/data/jsl-projects/BowlingGame/img/class-diagram.png" width="500" height="450">
+![class-diagram](https://user-images.githubusercontent.com/61968619/192010008-7ddd6c7b-78fa-4c3a-bb87-ab5615d385db.png)
 
 ### BowlingGame FlowChart - 1
-<img src="/Volumes/data/jsl-projects/BowlingGame/img/flow1.png" width="500" height="450">
+![flow1](https://user-images.githubusercontent.com/61968619/192010162-512ec810-4aa8-45bd-b584-4cb3780c7e0d.png)
 
 ### BowlingGame FlowChart - 2
-<img src="/Volumes/data/jsl-projects/BowlingGame/img/flow2.png" width="500" height="450">
+![flow2](https://user-images.githubusercontent.com/61968619/192010193-c39462cd-9188-4144-ba40-9267cca72f20.png)
 
 ### BowlingGame FlowChart - 3
-<img src="/Volumes/data/jsl-projects/BowlingGame/img/flow3.png" width="500" height="450">
+![flow3](https://user-images.githubusercontent.com/61968619/192010218-0313b6ca-57a8-4da1-bca5-07e408cb294e.png)
 
 ### 📎 Reference to open license
     https://gist.github.com/felipernb/3981562
