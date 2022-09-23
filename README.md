@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 # Java Bowling Game
 ## [ Sample Code ]
+=======
+# JAVA_BowlingGame
+***
+## 🔍 [ Sample ]
+>>>>>>> 67c029c16f60f80a4e01ba8b27d59f1da0b1f640
     ---------------------
         Bowling Game	
     ---------------------
@@ -9,13 +15,23 @@
     [4] 게임 규칙 다운로드
     [5] 게임 종료
         메뉴 선택 >> 
+<<<<<<< HEAD
 ## [ Game Rule ]
+=======
+***
+## 📝 [ 경기규칙 ]
+>>>>>>> 67c029c16f60f80a4e01ba8b27d59f1da0b1f640
 	1. 한 게임은 모두 10개의 프레임(FRAME)으로 이루어져 있다.
 	2. 한 프레임은 2회 까지 공을 던질 수 있다.
 	3. 스트라이크(STRIKE) 10개의 볼링핀을 모두 쓰러트리는 경우
 	4. 스페어(SPARE) 1회 공을 던지고 남아 있는 볼링핀을 2회에서 모두 제거 했을때
 
+<<<<<<< HEAD
 ## [ Game Rule Score ]
+=======
+***
+## 📝 [ 볼링의 점수 계산 방법 ]
+>>>>>>> 67c029c16f60f80a4e01ba8b27d59f1da0b1f640
 	볼링핀이 1개 쓰러질 때 마다 +1 점
 	스페어일 경우 ( 그 다음 프레임에서 1 회차의 점수를 더한다.)
 	예를들어 1 프레임 1회 8핀, 2회 스페어(2핀 처리했음) 일 경우 10점을 뭍고
@@ -29,6 +45,7 @@
     공을 던질 수 있지만 10 프레임 경기에서 스트라이크를 쳤다고 해서 앞선 프레임 처럼 보너스 점수를 얻을 순 없다.
     단지 쓰러트린 핀 수 만큼 점수를 얻을 수 있다.
 
+<<<<<<< HEAD
 ### Folder structural diagram
 <img src="/Volumes/data/jsl-projects/BowlingGame/img/diagram.png" width="500" height="450">
 
@@ -46,3 +63,7 @@
 
 ### Reference to open license
     https://gist.github.com/felipernb/3981562
+=======
+### 📌 BowlingGame.java 오픈소스 참고 주소
+    https://gist.github.com/felipernb/3981562
+>>>>>>> 67c029c16f60f80a4e01ba8b27d59f1da0b1f640
