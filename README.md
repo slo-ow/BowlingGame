@@ -1,4 +1,4 @@
-# Java Bowling Game
+# Java Bowling Game 🎳
 
 ### 🔍 [ Sample Code ]
     ---------------------
