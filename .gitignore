@@ -1,4 +1,12 @@
+# folders
 .idea
+download
+img
 out
 production
+# .iml
 BowlingGame.iml
+# files
+README.md
+rule.dat
+rule.txt
