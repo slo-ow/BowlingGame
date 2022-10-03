@@ -7,6 +7,5 @@ production
 # .iml
 BowlingGame.iml
 # files
-README.md
 rule.dat
 rule.txt
